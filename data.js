@@ -4,14 +4,14 @@ export const units= [
         metricSingle:'metre',
         imperial:'feet',
         imperialSingle:'foot',
-        content:'Length (Meters/Feet)'
+        content:'Length (Metres/Feet)'
     },
     {   conversionFactor: 0.264,
         metric:'litres',
         metricSingle:'litre',
         imperial:'gallons',
         imperialSingle:'gallon',
-        content:'Volume (Liters/Gallons)'
+        content:'Volume (Litres/Gallons)'
     },
     {   conversionFactor: 2.204,
         metric:'kilogram',
