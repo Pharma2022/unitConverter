@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/c06f05b4aa.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Converter</title>
+  </head>
+  <body >
+    <section class="input-wrapper">
+        <div class="container input-container flex-col justify-center">
+            <h1 class="title">Metric/Imperial Unit Conversion</h1>
+            
+            <input type="number" class="number-input" id="number-input" value='1' />
+            <button class="btn-primary" id="convert-btn">Convert</button>
+            <button class="btn-primary" id="toggle-dark-btn">Dark Mode</button>
+        </div>
+    </section>
+    <section class="main-wrapper">
+        <div class="container unit-container justify-center flex-col" id="unit-html">
+    
+
+        </div>
+    </section>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
