@@ -70,7 +70,9 @@ h1,h2,h3,p,section,div,span,input,button{
 .width-full{
   width: 100%;
 }
-
+button,.cursor{
+  cursor: pointer;
+}
 .container{
   width: 100%;
   max-width: 550px;
@@ -102,6 +104,9 @@ input#number-input{
   color:var(--charcoal);
 }
 /* Main Styles */
+
+
+
 .input-wrapper{
   padding-block: 1rem;
   background-color: var(--very-strong-lilac);
@@ -161,4 +166,16 @@ background-color: var(--white);
 }
 .unit-item-content-dark{
   color:white;
+}
+
+.toggle-dark-btn{
+  width: fit-content;
+  height: fit-content;
+  margin-top: 2rem;;
+  margin-left: auto;
+  gap:1rem;
+}
+
+.bg-dark{
+  color: var(--navy-500)
 }

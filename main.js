@@ -4,7 +4,7 @@ const convertBtn=document.getElementById('convert-btn')
 const unitHtml=document.getElementById('unit-html')
 let isDark=false
 const toggleDarkBtn=document.getElementById('toggle-dark-btn')
-
+const iconClass=document.querySelectorAll('icon')
 const renderUnits=()=>unitHtml.innerHTML= units.map(({conversionFactor,metric,metricSingle,imperial,content,imperialSingle})=>{
         const inputValue= numberInput.value
         
@@ -28,8 +28,11 @@ const getDarkStyle=(isDark)=> ({
     
 const toggleDarkMode=()=>{
     document.body.classList.toggle('body-dark')
+    toggleDarkBtn.classList.toggle('bg-dark')
     isDark= isDark? false :true
-    toggleDarkBtn.innerText= isDark? 'Light Mode':'Dark Mode'
+ 
+
+    
     renderUnits(isDark)
 
 
