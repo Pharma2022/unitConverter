@@ -4,8 +4,8 @@ const convertBtn=document.getElementById('convert-btn')
 const unitHtml=document.getElementById('unit-html')
 let isDark=false
 const toggleDarkBtn=document.getElementById('toggle-dark-btn')
-const iconClass=document.querySelectorAll('icon')
-const renderUnits=()=>unitHtml.innerHTML= units.map(({conversionFactor,metric,metricSingle,imperial,content,imperialSingle})=>{
+const clearInput=()=>numberInput.value=""
+const renderUnits=()=>{unitHtml.innerHTML= units.map(({conversionFactor,metric,metricSingle,imperial,content,imperialSingle})=>{
         const inputValue= numberInput.value
         
         const imperialUnit=inputValue==='1' ? imperialSingle: imperial
@@ -16,7 +16,11 @@ const renderUnits=()=>unitHtml.innerHTML= units.map(({conversionFactor,metric,me
        return `<div class="${item} container flex-col justify-center">
         <h3 class=${title}>${content}</h3>
         <p class='${itemContent}'>${inputValue} ${metricUnit} = ${(inputValue*conversionFactor).toFixed(2)} ${imperial} | ${inputValue} ${imperialUnit} = ${(inputValue/conversionFactor).toFixed(2)} ${metric}</p>
-      </div>`})
+      </div>`}
+      
+      )
+    clearInput()
+    }
 
 
 const getDarkStyle=(isDark)=> ({
