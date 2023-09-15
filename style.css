@@ -132,7 +132,10 @@ input#number-input{
 .input-container{
     gap:1rem;
 }
-
+.title-container{
+  position: relative;
+  padding-block: 1.25rem;
+}
 .btn-primary{
   padding: .75rem 1.75rem;
   min-width: 9rem;
@@ -169,11 +172,12 @@ background-color: var(--white);
 }
 
 .toggle-dark-btn{
-  width: fit-content;
-  height: fit-content;
-  margin-top: 2rem;;
-  margin-left: auto;
-  gap:1rem;
+  
+  font-size: 2rem;
+
+  position: absolute;
+  right: 30px;
+  bottom: -40px;
 }
 
 .bg-dark{
