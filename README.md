@@ -8,10 +8,8 @@ $ npm run dev
 ````
 
 
-See 
+See [Demo](https://shahs-unit-converter.netlify.app/)
 
-```[Demo](https://shahs-unit-converter.netlify.app/)
-```
 
 ## Functionality
 - First select if you want your passwords to include numbers, letters or symbols using the checkboxes
