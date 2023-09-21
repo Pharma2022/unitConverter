@@ -7,8 +7,11 @@ $ npm install
 $ npm run dev
 ````
 
-See [Demo](https://shahs-unit-converter.netlify.app/)
 
+See 
+
+```[Demo](https://shahs-unit-converter.netlify.app/)
+```
 
 ## Functionality
 - First select if you want your passwords to include numbers, letters or symbols using the checkboxes
@@ -24,7 +27,7 @@ See [Demo](https://shahs-unit-converter.netlify.app/)
 - I have incorporated dark mode, i think one of my only projects that doesn't use React to do so.
 - The challenge was to originally use for loops, i could use for of or for each, but neither of these can return information and would instead rely on template literal concatenation. 
 - I could add a copy function
-- 
+  
 ## Further Stretch Goals/General Improvements
 - I would like to break my CSS into typography to make maintenance easier from a responsive design point of view
 - I could refactor the event listeners into a single event listener
